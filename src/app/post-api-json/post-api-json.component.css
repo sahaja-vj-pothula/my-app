@@ -1,0 +1,8 @@
+.post{
+    border: 1px solid red;
+    width: 30% ;
+    height: 260px;
+    display:inline-flex;
+    padding: 18px;
+    justify-content: space-evenly;
+}

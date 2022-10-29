@@ -1,0 +1,21 @@
+input{
+    height:35px;
+    width: 70rem;
+}
+
+
+button{
+    height:35px;
+    width: 90px;
+    justify-content: flex-end;
+}
+.c{
+    height:35px;
+    width:70rem;
+}
+.o{
+    height:35px;
+    width: 90px;
+    justify-content: flex-end;
+
+}

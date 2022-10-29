@@ -1,0 +1,26 @@
+<!-- pre-defined pipes -->
+<h1>{{name | uppercase }}</h1>
+<h1>{{city | lowercase}}</h1>
+
+<h2>{{ dob }}</h2>
+<h2>{{ dob | date }}</h2>
+<h2>{{ dob | date:'dd-mm-yyyy'}}</h2>
+<h2>{{ dob | date:'yyyy/mm/dd'}}</h2>
+<h2>{{ today }}</h2>
+<h2>{{ today | date:'fullDate'}}</h2>
+<h2>{{ today | date:'short'}}</h2>
+<h2>{{ today | date:'medium'}}</h2>
+<h2>{{ today | date:'shortDate'}}</h2>
+<h2>{{ today | date:'mediumDate'}}</h2>
+<h2>{{ today | date:'fullTime'}}</h2>
+<h2>{{ today | date:'longTime'}}</h2>
+
+<!-- custom pipes -->
+<h2>{{ user }}</h2>
+<h2>{{ user | json}}</h2>
+
+<h2>{{ price | price}}</h2>
+<h2>{{ age | age }}</h2> 
+<h2>{{ marks | percentage}}</h2> 
+
+
