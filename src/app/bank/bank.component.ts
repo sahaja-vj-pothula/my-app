@@ -76,7 +76,7 @@ export class BankComponent implements OnInit {
     this._bankService.createAccount(data).subscribe(
       (data:any)=>{
         this.accounts=data;
-
+ 
       },
       (err:any)=>{
         alert("internal server error");
