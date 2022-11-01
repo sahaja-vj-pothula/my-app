@@ -1,0 +1,14 @@
+form{
+    height: 600px;
+    width: 500px;
+    background-color: rgb(166, 166, 254);
+    margin: 30px;
+    text-align: center;
+    overflow:auto;
+}
+label{
+    background-color: black;
+    color: aliceblue;
+    padding: 6px;
+    margin: 9px;
+}

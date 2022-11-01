@@ -1,0 +1,72 @@
+<form [formGroup]="productForm">
+    <label>Name:</label>
+    <div>
+        <p></p>
+    </div>
+
+    <input type="text" placeholder="name" formControlName="name">
+    <br>
+
+    <label>Price:</label>
+
+    <input type="text" placeholder="price" formControlName="price">
+    <br>
+    <label>Expiry:</label>
+    <input type="text" placeholder="expiry" formControlName="expiry">
+    <br>
+    <div formGroupName="address">
+        <h3>Address:</h3>
+        <label>HNO:</label>
+        <input type="text" placeholder="H.no" formControlName="HNO">
+        <br>
+
+        <label>City:</label>
+        <input type="text" placeholder="city" formControlName="city">
+        <br>
+
+        <label>Pin:</label>
+        <input type="number" placeholder="pin" formControlName="pin">
+        <br>
+        <button  class="btn btn-primary" (click)="add()">Add comment</button>
+
+    </div>
+    <div formArrayName="comments">
+        <div *ngFor="let comment of commentsFormArray?.controls; let a=index">
+            <div formGroupName="{{a}}">
+                <label>Message:</label>
+                <textarea formControlName="message" placeholder="comment" rows="6" cols="20">message:</textarea>
+                <br>
+                <label>Time:</label>
+                <input type="datetime" placeholder="time & date" formControlName="time">
+                <button  class="btn btn-danger" (click)="delete(a)">Delete</button>
+                
+            </div>
+        </div>
+
+    </div>
+    <label>Payments-type: </label>
+
+
+    <input type="radio" formControlName="payments" name="Payments-type:" value="upi-ids">
+    <label>UPIs</label>
+
+    <input type="radio" formControlName="payments" name="Payments-type:" value="cards-number">
+    <label>Cards</label>
+    <br>
+    <div *ngIf="productForm.get('payments')?.value =='upi-ids'">
+        <label>upis</label>
+        <input type="number" formControlName="upis">
+
+    </div>
+    <div *ngIf="productForm.get('payments')?.value =='cards-number'">
+        <label>cards</label>
+        <input type="number"  formControlName="cards">
+    </div>
+
+    <button class="btn btn-dark"(click)="submit()">submit</button>
+
+
+
+
+
+</form>

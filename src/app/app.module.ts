@@ -30,6 +30,7 @@ import { MailsComponent } from './mails/mails.component';
 import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateProductComponent } from './create-product/create-product.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     MailsComponent,
     BankDetailsComponent,
     CreateAccountComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    CreateProductComponent
   ],
   imports: [
     BrowserModule,
